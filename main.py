@@ -21,6 +21,6 @@ os.system(convert_command)
 print(f"{output_bam_file} has been converted to {output_sam_file}")
 
 # run sam2consensus.py
-sam2consensus_command = f"python sam2consensus.py -i {os.path.join(folder, output_sam_file)} -o {folder}"
+sam2consensus_command = f"python3 sam2consensus.py -i {os.path.join(folder, output_sam_file)} -o {folder}"
 os.system(sam2consensus_command)
 print(f"{output_sam_file} has been processed by sam2consensus.py")
