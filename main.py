@@ -8,6 +8,7 @@ import os
 folder = input("Please enter the folder where the .bam files are located: ")
 input_bam_file = input("Please enter the name of the input .bam file: ")
 output_bam_file = input("Please enter the name of the output .bam file: ")
+threshold = input("Please enter the threshold you want to use: ")
 
 # concatenate bam files
 concat_command = f"samtools cat {os.path.join(folder, input_bam_file)} > {os.path.join(folder, output_bam_file)}"
@@ -21,6 +22,6 @@ os.system(convert_command)
 print(f"{output_bam_file} has been converted to {output_sam_file}")
 
 # run sam2consensus.py
-sam2consensus_command = f"python3 sam2consensus.py -i {os.path.join(folder, output_sam_file)} -o {folder}"
+sam2consensus_command = f"python3 sam2consensus.py -i {os.path.join(folder, output_sam_file)} -o {folder} -c {threshold}"
 os.system(sam2consensus_command)
 print(f"{output_sam_file} has been processed by sam2consensus.py")
