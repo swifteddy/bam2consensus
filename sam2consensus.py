@@ -94,7 +94,7 @@ def main():
 		help="Character for padding regions not covered in the reference, default= - (gap)")
 	parser.add_argument("-d", "--maxdel", action="store", dest="maxdel", default=150,
 		help="Ignore deletions longer than this value, default=150")
-        args = parser.parse_args()
+	args = parser.parse_args()
 	filename = args.filename
         
 	# Prepare the opener if the SAM file is compressed
