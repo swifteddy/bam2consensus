@@ -2,11 +2,11 @@
 This script takes a BAM file, concatenates it, converts it to SAM format, and then uses sam2consensus.py to generate a consensus FASTA file.
 
 ## Usage
-1.Clone this repository and navigate to the bam2consensus directory.
-2.Ensure samtools is installed and in your PATH.
-3.Place your BAM file(s) in a directory.
+1. Clone this repository and navigate to the bam2consensus directory.
+2. Ensure samtools is installed and in your PATH.
+3. Place your BAM file(s) in a directory.
 4. Run bam_to_consensus.py.
-5.Follow the prompts to enter the input and output file names, don't forget the file extensions.
+5. Follow the prompts to enter the input and output file names, don't forget the file extensions.
 
 ## Dependencies
 * samtools (https://github.com/samtools/samtools)
