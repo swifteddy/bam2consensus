@@ -95,8 +95,7 @@ def main():
 	parser.add_argument("-d", "--maxdel", action="store", dest="maxdel", default=150,
 		help="Ignore deletions longer than this value, default=150")
         args = parser.parse_args()
-
-        filename = args.filename
+	filename = args.filename
         
 	# Prepare the opener if the SAM file is compressed
 	if filename.endswith(".gz"):
