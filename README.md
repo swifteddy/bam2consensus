@@ -52,3 +52,7 @@ The script will then generate a concatenated BAM file, a SAM file, and a consens
 
 ## Disclaimer
 This script was created for personal use and may not work for all use cases. Use at your own risk. Also still in development.
+
+## Original contributors for Sam2Consensus.py
+Code: Edgardo M. Ortiz
+Data and testing: Deise J. P. Gonçalves
